@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * print_most_numbers - print num except 2 and 4
  *
@@ -12,7 +13,7 @@ void print_most_numbers(void)
 	for (c = '0'; c <= '9'; c++)
 	{
 		if (!(c == '2' || c == '4'))
-			print (c);
+			_putchar(c);
 	}
-	print('\n');
+	_putchar('\n');
 }
