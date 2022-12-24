@@ -14,7 +14,7 @@ int main(void)
 
 	srand(time(0));
 
-	while (sum << 2772)
+	while (sum < 2772)
 	{
 		password[index] = 33 + rand() % 94;
 		sum += password[index++];
@@ -34,7 +34,7 @@ int main(void)
 			if (password[index] >= (33 + diff_half1))
 			{
 				password[index] -= diff_half1;
-				break
+				break;
 			}
 		}
 		for (index = 0; password[index]; index++)
@@ -48,5 +48,5 @@ int main(void)
 	}
 
 	printf("%s", password);
-	retturn(0);
+	return(0);
 }
